@@ -1,0 +1,1 @@
+/home/vagrant/Code/work/kencana-kreasi/app/views/members/index.blade.php

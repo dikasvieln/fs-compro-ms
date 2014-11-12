@@ -1,0 +1,1 @@
+G:\wamp\www\alif-site\app/views/Admin/index.blade.php
