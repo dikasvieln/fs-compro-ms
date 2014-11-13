@@ -6,15 +6,20 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<!--[if lte IE 8]>
-	<script src="css/ie/html5shiv.js"></script>
-	<![endif]-->
-		<link rel="stylesheet" href="{{ asset('themes/css/skel.css') }}" />
-		<link rel="stylesheet" href="{{ asset('themes/css/style.css')}}" />
-		<link rel="stylesheet" href="{{ asset('themes/css/style-wide.css')}}" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		{{ HTML::style('css/skel.css') }}
+		{{ HTML::style('css/style.css') }}
+		{{ HTML::style('css/style-wide.css') }}
 </head>
-<body class="landing">
+<?php
+    // get the controller and the action
+    $routeAction = Route::currentRouteAction();
+
+    /*
+     * this will strip controllerName@action to controllerName
+     */
+    $controllerName = substr($routeAction, 0, strpos($routeAction, '@'));
+?>
+<body {{ $controllerName === 'HomeController' ? 'class="landing"': '' }}>
 
 	<!-- header -->
 	@include('partials.header')
@@ -27,11 +32,15 @@
 	
 
 	<!-- le javascript -->
-	<script src="{{ asset('themes/js/jquery.min.js')}}"></script>
-	<script src="{{ asset('themes/js/jquery.dropotron.min.js')}}"></script>
-	<script src="{{ asset('themes/js/jquery.scrollgress.min.js')}}"></script>
-	<script src="{{ asset('themes/js/skel.min.js')}}"></script>
-	<script src="{{ asset('themes/js/skel-layers.min.js')}}"></script>
-	<script src="{{ asset('themes/js/init.js')}}"></script>
+
+
+	{{ HTML::script('js/jquery.min.js') }}
+	{{ HTML::script('js/jquery.dropotron.min.js') }}
+	{{ HTML::script('js/jquery.scrollgress.min.js') }}
+    {{ HTML::script('js/skel.min.js') }}
+    {{ HTML::script('js/skel-layers.min.js') }}
+    {{ HTML::script('js/jssor.js') }}
+    {{ HTML::script('js/jssor.slider.min.js') }}
+    {{ HTML::script('js/init.js') }}
 </body>
 </html>

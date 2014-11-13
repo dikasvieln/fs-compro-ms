@@ -1,4 +1,4 @@
-@extends('layout.generic')
+@extends('layout.default')
 
 @section('content')
 	

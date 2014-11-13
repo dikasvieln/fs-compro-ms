@@ -3,7 +3,6 @@
 Route::get('/', ['uses' => 'HomeController@index', 'as' => 'index']);
 Route::get('about', ['uses' => 'AboutController@index', 'as' => 'about']);
 Route::get('client', ['uses' => 'ClientController@index', 'as' => 'client']);
-Route::get('contact', ['uses' => 'ContactController@index', 'as' => 'contact' ]);
 
 // admin authentication
 Route::group(array('prefix' => 'admin'), function(){
@@ -16,7 +15,7 @@ Route::group(array('prefix' => 'admin'), function(){
 Route::group(['prefix' => 'admin', 'before' => 'auth'], function ()
 {
 	// Route::resource('post',['uses' => 'AdminPostControl', 'as' => 'admin.post']);
-	// Route::resource('client');
+	// Route::resource('about',['uses' => ]);
 	// Route::resource('posts', 'AdminPostsController@getIndex');
 });
 
