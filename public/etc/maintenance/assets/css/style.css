@@ -1,0 +1,103 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+   font-family: 'Raleway', sans-serif;
+}
+section {
+    padding-top:80px;
+    padding-bottom:80px;
+}
+/* =============================================================
+   HOME SECTION STYLES
+ ============================================================ */
+#home-sec {
+    background:url(../img/header.jpg) no-repeat center center;
+    background-size:cover;
+    padding:0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    min-height:600px;
+}
+
+    #home-sec .overlay {
+        background:rgba(61, 61, 61, 0.90);
+        min-height:600px;
+    }
+     #home-sec h2 {
+       margin-top:120px;
+       font-weight:900;
+       font-size:40px;
+       padding-bottom:30px;
+    }
+
+.img-set {
+    height:350px;
+    margin-top:120px;
+}
+.c-white {
+    color:#fff;
+}
+.btn-social-custom,.btn-social-custom:hover {
+    border: 3px solid #FFF;
+    background-color:rgba(22, 201, 186, 0);
+    margin:10px 5px;
+    color:#fff;
+    text-decoration:none;
+}
+
+/* =============================================================
+   SERVICES SECTION STYLES
+ ============================================================ */
+#services-sec {
+    background-color:#dcdcdc;
+    
+}
+
+.service-img {
+    height:150px;
+    margin-top:30px;
+    margin-bottom:60px;
+}
+/* =============================================================
+   LAUNCH SECTION STYLES
+ ============================================================ */
+#launch-sec {
+    background-color:#000;
+}
+.launch-date {
+    line-height:50px;
+    font-size:25px;
+    color:#fff;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+/* =============================================================
+   FOOTER SECTION STYLES
+ ============================================================ */
+#footer-sec h2{
+    font-size:30px;
+    font-weight:800;
+}
+
+.footer-div {
+    line-height:50px;
+    font-size:20px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.copy-txt {
+    text-align:right;
+    font-size:14px;
+    padding:15px 50px 15px 50px;
+}
