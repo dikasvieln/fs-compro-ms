@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: almark
- * Date: 11/13/2014
- * Time: 9:24 PM
- */
 
 class AdminAuthController extends \BaseController {
     function getLogin(){
