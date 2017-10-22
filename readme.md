@@ -1,3 +1,4 @@
 ## KIK
 
-Web Company Profile Kencana Indonesia Kreasi
+Some of my portfolio project
+#feel free to check it out#

@@ -12,16 +12,7 @@ class AdminProfilesController extends \BaseController
 	{
 		$profiles = Profile::all();
 		return View::make('admin.profiles.index', compact('profiles'));
-		// var_dump($profiles);
 	}
-
-	/**
-	 * admin profile create
-	 */
-	// public function create()
-	// {
-	// 	return View::make('admin.profiles.create');		
-	// }
 
 	/**
 	 * admin profile store
